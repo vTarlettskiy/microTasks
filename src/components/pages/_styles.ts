@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+const HeaderTextStyled = styled.h1`
+    margin-top: 0;
+`
+
 const NavWrapper = styled.div`
     margin-left: 10px;
     font-size: 20px;
@@ -61,5 +65,6 @@ export const S = {
     StyledHeader,
     StyledFooter,
     StyledContentBlock,
-    StyledNav
+    StyledNav,
+    HeaderTextStyled
 }
