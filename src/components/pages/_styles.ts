@@ -59,6 +59,18 @@ const StyledFooter = styled.div`
     color: white;
 `
 
+const StyledImgContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px
+`
+
+const StyledImg = styled.img`
+    width: 300px;
+    height: 300px;
+`
+
 export const S = {
     NavWrapper,
     StyledBody,
@@ -66,5 +78,7 @@ export const S = {
     StyledFooter,
     StyledContentBlock,
     StyledNav,
-    HeaderTextStyled
+    HeaderTextStyled,
+    StyledImgContainer,
+    StyledImg
 }
