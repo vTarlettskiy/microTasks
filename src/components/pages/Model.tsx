@@ -2,6 +2,7 @@ import * as React from 'react';
 import {adidasArr, ItemType} from "./Adidas";
 import {useParams} from "react-router-dom";
 import {pumaArr} from "./Puma";
+import {abibasArr} from "./Abibas";
 
 type CrossModels = {
     [key: string]: ItemType[]
@@ -9,7 +10,8 @@ type CrossModels = {
 
 const crossModel: CrossModels = {
     adidas: adidasArr,
-    puma: pumaArr
+    puma: pumaArr,
+    abibas: abibasArr
 }
 
 export const Model = () => {
