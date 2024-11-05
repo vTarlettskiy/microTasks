@@ -71,6 +71,33 @@ const StyledImg = styled.img`
     height: 300px;
 `
 
+const HorizontalNavigation = styled.div`
+    display: flex;
+    justify-content: center;
+`
+
+const LinkLikeButton = styled.a`
+    height: 54px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
+const ButtonLikeLink = styled.button`
+    margin-left: 5px;
+    height: 55px;
+    background-color: #ff00b7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 30px;
+`
+
 export const S = {
     NavWrapper,
     StyledBody,
@@ -80,5 +107,9 @@ export const S = {
     StyledNav,
     HeaderTextStyled,
     StyledImgContainer,
-    StyledImg
+    StyledImg,
+    HorizontalNavigation,
+    LinkLikeButton,
+    ButtonLikeLink,
+
 }

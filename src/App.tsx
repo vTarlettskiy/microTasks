@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink, Outlet} from 'react-router-dom';
+import {NavLink, Outlet, useNavigate} from 'react-router-dom';
 import {S} from "./components/pages/_styles";
 
 const PATH = {
@@ -13,6 +13,12 @@ const PATH = {
 } as const
 
 function App() {
+
+    const navigate = useNavigate()
+    const navigateHandler = () => {
+        navigate(-1)
+    }
+
     return (
         <S.StyledHeader>
             <S.StyledHeader><S.HeaderTextStyled>HEADER</S.HeaderTextStyled></S.StyledHeader>
@@ -26,6 +32,12 @@ function App() {
                     {/*<S.NavWrapper><NavLink to={PATH.LOGIN}>Login</NavLink></S.NavWrapper>*/}
                 </S.StyledNav>
                 <S.StyledContentBlock>
+                    <S.HorizontalNavigation>
+                        <S.LinkLikeButton>
+                            <NavLink to={PATH.ADIDAS}>На главную</NavLink>
+                        </S.LinkLikeButton>
+                        <S.ButtonLikeLink onClick={navigateHandler}>Назад</S.ButtonLikeLink>
+                    </S.HorizontalNavigation>
                     <Outlet/>
                 </S.StyledContentBlock>
             </S.StyledBody>
